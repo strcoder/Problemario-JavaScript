@@ -1,0 +1,37 @@
+.btn-primary button {
+    color: #fbfbfb;
+    background-color: #0a3083;
+    border-radius: 8px;
+    border: none;
+    border-bottom: 5px solid #061f55;
+    font-size: 1.2em;
+    padding: 1%;
+    width: 55%;
+    height: 120%;
+    justify-self: center;
+    transition: 0.4s linear;
+}
+
+.btn-primary button:hover {
+    cursor: pointer;
+    background-color: #061f55;
+    border-bottom-color: #031231;
+}
+
+.btn-primary button:active {
+    transform: scale(0.8);
+}
+
+.btn-add button {
+    color: #fbfbfb;
+    background-color: #0a3083;
+    border-radius: 100%;
+    font-size: 1.2em;
+    padding: 1%;
+    width: 50px;
+    height: 50px;
+    justify-self: center;
+    transition: 0.4s linear;
+    align-self: center;
+    border: 3px solid #042057;
+}

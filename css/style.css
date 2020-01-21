@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #313840;
+    font-family: 'Roboto', sans-serif;
+    color: #fbfbfb;
+
+}
+
+header {
+    padding: 2% 4%;
+}
+
+.menu-list {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    justify-items: center;
+}
+
+.menu-list {
+    list-style: none;
+}
+
+.content {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+}
+
+.content input {
+    background: none;
+    border: 1px solid #fbfbfb;
+    border-radius: 8px;
+    outline: none;
+    color: #c7c7c7;
+    padding: 2% 2%;
+    font-size: 120%;
+    width: 80%;
+    margin: 5% 0;
+    justify-self: center;
+}
+
+.matrices {
+    grid-template-columns: repeat(3, 0.5fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.matriz {
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+}
+
+.matriz-result {
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    width: max-content;
+    justify-self: center;
+    margin-top: 2%;
+}
+
+.visible {
+    display: none;
+}
+
+.matriz input {
+    margin: 0;
+    padding: 10px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.input-list {
+    list-style: none;
+    padding: 0;
+
+}
+
+p {
+    margin: 0;
+}
+
+.result {
+    margin-top: 5%;
+    padding: 0;
+    list-style: none;
+}
+
+.select {
+    align-self: center;
+    height: 60%;
+}
+
+select {
+    color: #c7c7c7;
+    background: #0a3083;
+    border: none;
+    border-bottom: 5px solid #061f55;
+    border-radius: 8px;
+    width: 90%;
+    transition: 0.4s linear;
+}
+
+select:hover {
+    background-color: #061f55;
+    border-bottom-color: #031231;
+}
+
+.date {
+    grid-template-columns: repeat(3, 1fr);
+}

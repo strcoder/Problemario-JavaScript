@@ -1,0 +1,67 @@
+.title {
+    font-size: 2em;
+    padding-bottom: 2%;
+    border-bottom: 5px solid #0a3083;
+    justify-self: center;
+}
+
+.subtitle {
+    font-family: 'Montserrat', sans-serif;
+    color: #d2d2d2;
+    font-size: 1.6em;
+
+}
+
+.text {
+    font-family: 'Montserrat', sans-serif;
+    color: #d2d2d2;
+    font-size: 1.2em;
+    align-self: center;
+}
+
+.menu-text {
+    font-size: 1em;
+}
+
+.input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+
+}
+
+.menu-list li {
+    transition: 0.3s linear;
+}
+
+.menu-list button {
+    background: none;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #d2d2d2;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0;
+    cursor: pointer;
+}
+
+.menu-list li:hover {
+    transform: scale(1.2);
+    color: #fafafa;
+}
+
+select {
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    body {
+        font-size: 10px;
+    }
+}

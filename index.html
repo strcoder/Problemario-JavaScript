@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/text.css">
+  <link rel="stylesheet" href="./css/button.css">
+  <title>Tarea 1</title>
+</head>
+
+<body id="body">
+  <header>
+    <nav id="menu" class="menu">
+      <ul id="menu-list" class="menu-list"></ul>
+    </nav>
+  </header>
+  <section id="content" class="content btn-primary">
+
+    <h1 id="title" class="title"></h1>
+    <h2 id="subtitle" class="subtitle"></h2>
+    <h2 id="instructions" class="text"></h2>
+
+    <div id="matrices" class="matrices visible">
+      <div id="matriz-0" class="matriz"></div>
+      <p id="producto" class="producto">X</p>
+      <div id="matriz-1" class="matriz"></div>
+    </div>
+
+    <ul id="input-list" class="input-list">
+
+      <li id='item-number-0' class="visible">
+        <p id="text-number-0" class="text"></p>
+        <input id="input-number-0" type="text" class="input" name="X"
+          placeholder="Numero" onkeypress="return numeroReal(event, this)" />
+      </li>
+
+      <li id='item-number-1' class="visible">
+        <p id="text-number-1" class="text"></p>
+        <input id="input-number-1" type="text" class="input" name="Y"
+          placeholder="Numero" onkeypress="return numeroReal(event, this)" />
+      </li>
+
+      <li id='item-number-2' class="visible">
+        <p id="text-number-2" class="text"></p>
+        <input id="input-number-2" type="text" class="input" name="N"
+          placeholder="Numero" onkeypress="return numeroEntero(event, this)" />
+      </li>
+
+      <li id='item-number-3' class="btn-add visible">
+        <p id="text-number-3" class="text"></p>
+        <input id="input-number-3" type="text" class="input" name="Array"
+          placeholder="Numero" onkeypress="return numeroReal(event, this)" />
+        <button id="btn-add" class="visible" onclick="">+</button>
+      </li>
+
+      <li id='item-number-4' class="select visible">
+        <select id="select-0" name="Day"></select>
+      </li>
+
+      <li id='item-number-5' class="select visible">
+        <select id="select-1" name="Shift"></select>
+      </li>
+
+      <div id="date" class="date visible">
+        <li id='item-number-6' class="select">
+          <select id="select-2" name="Day-Number"></select>
+        </li>
+  
+        <li id='item-number-7' class="select">
+          <select id="select-3" name="Month"></select>
+        </li>
+  
+        <li id='item-number-8' class="select">
+          <select id="select-4" name="Year"></select>
+        </li>
+      </div>
+    </ul>
+
+    <div id="buttons" class="btn-primary buttons-grid">
+      <button id="btn-primary" class="visible" onclick=""></button>
+      <button id="btn-secondary" class="visible" onclick=""></button>
+    </div>
+
+    <ul id="result" class="result"></ul>
+
+    <div id="matriz-result" class="matriz matriz-result visible"></div>
+
+  </section>
+  <script id="page" src=""></script> // Ejercicio a realizar
+  <script src="./js/index.js"></script> // elementos del DOM
+  <script src="./js/punto.js"></script> // clase punto
+  <script src="./js/fecha.js"></script>  // clase fecha
+  <script src="./js/empleado.js"></script>  // clase empleado
+  <script src="./js/header.js"></script>  // componentes del header y modificaciones de paginas
+  <script src="./js/elements.js"></script> // componentes escenciales del HTML
+  <script src="./js/inputs.js"></script> // input y sus eventos
+</body>
+</html>
