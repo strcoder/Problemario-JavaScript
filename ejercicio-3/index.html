@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fontisto@v3.0.4/css/fontisto/fontisto.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>Ejercicio-3 | Problemario Javascript</title>
+</head>
+<body>
+  <header class="Header">
+    <a href="/">Problemario Javascript</a>
+    <nav class="Header__nav">
+      <a href="/ejercicio-1/index.html">Ejercicio 1</a>
+      <a href="/ejercicio-2/index.html">Ejercicio 2</a>
+      <a href="/ejercicio-3/index.html" class="active">Ejercicio 3</a>
+      <a href="/ejercicio-4/index.html">Ejercicio 4</a>
+      <a href="/ejercicio-5/index.html">Ejercicio 5</a>
+      <a href="/ejercicio-6/index.html">Ejercicio 6</a>
+      <a href="/ejercicio-7/index.html">Ejercicio 7</a>
+      <a href="/ejercicio-8/index.html">Ejercicio 8</a>
+      <a href="/ejercicio-9/index.html">Ejercicio 9</a>
+      <a href="/ejercicio-10/index.html">Ejercicio 10</a>
+      <a href="/ejercicio-11/index.html">Ejercicio 11</a>
+      <a href="/ejercicio-12/index.html">Ejercicio 12</a>
+      <a href="/ejercicio-13/index.html">Ejercicio 13</a>
+    </nav>
+  </header>
+
+  <main class="Main">
+    <section class="Main--info">
+      <h1>Ejercicio 3</h1>
+      <p>Elabora una interfaz web para que lea un número entero y después de dar click en el botón muestre como resultado una pirámide de asteriscos.</p>
+      <p>¡Preacución! Numeros grandes podrían hacer que su navegaron deje de responder.</p>
+    </section>
+    <section class="Main__form">
+      <form id="Form" class="form-control">
+        <fieldset class="text-field">
+          <legend class="field-title">Columnas</legend>
+          <div class="field-container">
+            <input
+              value=""
+              id="Number"
+              name="number"
+              type="number"
+              autocomplete="off"
+              class="field-input"
+              placeholder="Digita un numero de columnas"
+            >
+          </div>
+        </fieldset>
+        <button type="submit" class="form-button">
+          Crear
+        </button>
+      </form>
+    </section>
+    <section id="ResultContainer" class="Main__result"></section>
+  </main>
+
+  <footer class="Footer">
+    <a
+      target='_blank'
+      rel='noreferrer'
+      href="https://github.com/strcoder/Problemario-JavaScript"
+    >
+      <i class="fi fi-github"></i>
+      <span>Repositorio</span>
+    </a>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+</html>
