@@ -4,11 +4,11 @@ const result = document.getElementById('Result');
 const resultContainer = document.getElementById('ResultContainer');
 
 const asterisks = (n) => {
-  var aux = '';
+  let aux = '';
   for (let i = 0; i < n; i++) {
-      aux += "* ";
+    aux += "* ";
   }
-  piramideItem.innerHTML = `${aux}`;
+  return `${aux}`;
 }
 
 form.addEventListener('submit', (e) => {
@@ -17,9 +17,9 @@ form.addEventListener('submit', (e) => {
   resultContainer.innerText = '';
 
   for (let i = 0; i <= parseInt(input.value, 10); i++) {
-    piramideItem = document.createElement('LI');
+    const piramideItem = document.createElement('LI');
     piramideItem.id = 'input-list-' + i;
-    asterisks((i * 2) - 1);
+    piramideItem.innerText = asterisks((i * 2) - 1);
     resultContainer.appendChild(piramideItem);
   }
 
