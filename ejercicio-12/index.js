@@ -41,6 +41,7 @@ form.addEventListener('submit', (e) => {
 
 addition.addEventListener('click', () => {
   if (array.length <= 1) {
+    result.innerHTML = `No hay valores suficientes`;
     return;
   }
 
@@ -50,6 +51,7 @@ addition.addEventListener('click', () => {
 
 subtraction.addEventListener('click', () => {
   if (array.length <= 1) {
+    result.innerHTML = `No hay valores suficientes`;
     return;
   }
 
