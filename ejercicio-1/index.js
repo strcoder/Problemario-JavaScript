@@ -26,17 +26,19 @@ form.addEventListener('submit', (e) => {
 });
 
 showButton.addEventListener('click', () => {
-  const zero = array.filter((item) => item === 0).length;
-  const positive = array.filter((item) => item > 0);
-  const negative = array.filter((item) => item < 0);
-  const higher = Math.max(...array);
-  const less =  Math.min(...array);
-  resultContainer.style.display = 'grid';
   const zeroP = document.getElementById('ResultZero');
   const positiveP = document.getElementById('ResultPositive');
   const negativeP = document.getElementById('ResultNegative');
   const higherP = document.getElementById('ResultHigher');
   const lessP = document.getElementById('ResultLess');
+
+  const zero = array.filter((item) => item === 0).length;
+  const positive = array.filter((item) => item > 0);
+  const negative = array.filter((item) => item < 0);
+  const higher = Math.max(...array);
+  const less =  Math.min(...array);
+
+  resultContainer.style.display = 'grid';
   zeroP.innerText = `Numeros cero: ${zero}`;
   positiveP.innerText = `Numeros positivos: ${positive.length} ${JSON.stringify(positive)}`;
   negativeP.innerText = `Numeros positivos: ${negative.length} ${JSON.stringify(negative)}`;

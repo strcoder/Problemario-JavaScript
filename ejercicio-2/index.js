@@ -17,7 +17,9 @@ const potencia = (x, n) => {
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  if (!inputX.value || !inputK.value || inputK.value < 0) return;
+  if (!inputX.value || !inputK.value || inputK.value < 0) {
+    return;
+  }
 
   resultContainer.style.display = 'grid';
   valueX.innerHTML = `${inputX.value}<sup>${inputK.value}</sup>`;

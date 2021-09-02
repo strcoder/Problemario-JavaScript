@@ -69,21 +69,24 @@ button:active {
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
+  text-align: left;
   align-items: center;
   justify-content: space-between;
   background-color: var(--white);
 }
 
 .Header > a {
+  text-align: left;
   font-size: x-large;
 }
 
 .Header__nav {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .Header__nav a {
-  padding: 0px 10px;
+  padding: 10px;
 }
 
 .Header__nav a.active {
@@ -99,7 +102,8 @@ button:active {
 }
 
 .Main {
-  padding: 100px 20%;
+  padding: 25px;
+  padding-bottom: 100px;
 }
 
 .Main--info {
@@ -203,4 +207,10 @@ button:active {
   position: fixed;
   justify-content: flex-end;
   background-color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+  .Main {
+    padding: 100px 20%;
+  }
 }
