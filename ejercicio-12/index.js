@@ -10,13 +10,6 @@ const subtraction = document.getElementById('Subtraction');
 const array = [];
 resultContainer.style.display = 'none';
 
-const factorial = (n) => {
-  if (n === 0) {
-    return 1;
-  }
-  return n * factorial(n - 1);
-}
-
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   if (!inputX.value || !inputY.value) {
