@@ -41,7 +41,7 @@ showButton.addEventListener('click', () => {
   resultContainer.style.display = 'grid';
   zeroP.innerText = `Numeros cero: ${zero}`;
   positiveP.innerText = `Numeros positivos: ${positive.length} ${JSON.stringify(positive)}`;
-  negativeP.innerText = `Numeros positivos: ${negative.length} ${JSON.stringify(negative)}`;
+  negativeP.innerText = `Numeros negativos: ${negative.length} ${JSON.stringify(negative)}`;
   higherP.innerText = `Numero más grande: ${higher}`;
   lessP.innerText = `Numero más pequeño: ${less}`;
 });
