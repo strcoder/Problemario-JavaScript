@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fontisto@v3.0.4/css/fontisto/fontisto.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>Ejercicio-12 | Problemario Javascript</title>
+</head>
+<body>
+  <header class="Header">
+    <a href="/">Problemario Javascript</a>
+    <nav class="Header__nav">
+      <a href="/ejercicio-1/index.html">Ejercicio 1</a>
+      <a href="/ejercicio-2/index.html">Ejercicio 2</a>
+      <a href="/ejercicio-3/index.html">Ejercicio 3</a>
+      <a href="/ejercicio-4/index.html">Ejercicio 4</a>
+      <a href="/ejercicio-5/index.html">Ejercicio 5</a>
+      <a href="/ejercicio-6/index.html">Ejercicio 6</a>
+      <a href="/ejercicio-7/index.html">Ejercicio 7</a>
+      <a href="/ejercicio-8/index.html">Ejercicio 8</a>
+      <a href="/ejercicio-9/index.html">Ejercicio 9</a>
+      <a href="/ejercicio-10/index.html">Ejercicio 10</a>
+      <a href="/ejercicio-11/index.html">Ejercicio 11</a>
+      <a href="/ejercicio-12/index.html" class="active">Ejercicio 12</a>
+      <a href="/ejercicio-13/index.html">Ejercicio 13</a>
+    </nav>
+  </header>
+
+  <main class="Main">
+    <section class="Main--info">
+      <h1>Ejercicio 12</h1>
+      <p>Elaborar una clase Complejo que modele los números complejos implementando al menos las operaciones de suma, resta y módulo de un número complejo a imitación de la suma o resta de los números reales o enteros. Adecua la interfaz web para resolver este problema.</p>
+    </section>
+    <section class="Main__form">
+      <form id="Form" class="form-control">
+        <fieldset class="text-field">
+          <legend class="field-title">Parte real</legend>
+          <div class="field-container">
+            <input
+              value=""
+              id="NumberX"
+              name="numberX"
+              type="number"
+              autocomplete="off"
+              class="field-input"
+              placeholder="Digita un numero"
+            >
+          </div>
+        </fieldset>
+        <fieldset class="text-field">
+          <legend class="field-title">Parte imaginaria</legend>
+          <div class="field-container">
+            <input
+              value=""
+              id="NumberY"
+              name="numberY"
+              type="number"
+              autocomplete="off"
+              class="field-input"
+              placeholder="Digita un numero"
+            >
+          </div>
+        </fieldset>
+        <button type="submit" class="form-button">
+          Agregar
+        </button>
+      </form>
+    </section>
+    <section id="ResultContainer" class="Main__result">
+      <p><strong>Resultado:</strong></p>
+      <div id="List" class="Main__result--list"></div>
+      <div class="Main__result--actions">
+        <button type="button" id="Addition" class="btn-primary">
+          Suma
+        </button>
+        <button type="button" id="Subtraction" class="btn-primary">
+          Resta
+        </button>
+      </div>
+      <p id="Result" class="Main__result--detail"></p>
+    </section>
+  </main>
+
+  <footer class="Footer">
+    <a
+      target='_blank'
+      rel='noreferrer'
+      href="https://github.com/strcoder/Problemario-JavaScript"
+    >
+      <i class="fi fi-github"></i>
+      <span>Repositorio</span>
+    </a>
+  </footer>
+  <script src="./complejo.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
